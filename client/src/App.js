@@ -14,8 +14,6 @@ const App = () => {
   return (
     <>
     <Router>
-
-  <Route>
     <Switch>
       <Route exact path ="/">
       <Navbar />
@@ -32,7 +30,7 @@ const App = () => {
     <Portfolio />
       </Route>
     </Switch>
-  </Route>
+
     </Router>
     </>
   )
