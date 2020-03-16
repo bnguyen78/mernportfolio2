@@ -1,24 +1,11 @@
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import './About.css'
 import profilepic1 from './assets/profilepic1.png'
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    '& > *': {
-      margin: theme.spacing(10),
-      width: theme.spacing(150),
-      height: theme.spacing(60),
-    },
-  },
-}));
-
 const About = () => {
-  const classes = useStyles()
+
   return (
     <React.Fragment>
       <CssBaseline />
@@ -26,7 +13,7 @@ const About = () => {
 
       <h1><b>About Me</b></h1>
 
-    <img src={profilepic1} id="profile"/>
+    <img src={profilepic1} id="profile" alt="bryant"/>
       <p>Hello and welcome to my page! Thank you for checking me out!
       <br />
       <br />  

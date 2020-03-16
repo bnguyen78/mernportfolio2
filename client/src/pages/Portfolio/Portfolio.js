@@ -1,13 +1,13 @@
 import React from 'react'
 import './Portfolio.css'
-import { makeStyles, useTheme, ThemeProvider } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper' 
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
+import Link from '@material-ui/core/Link'
 import Typography from '@material-ui/core/Typography';
 import ratl from './assets/RATL.png'
 import animal from './assets/GUARDIAN.png'
@@ -34,6 +34,9 @@ const useStyles = makeStyles(theme => ({
     height: 200,
     width: 800,
     marginLeft: 200
+  },
+  text: {
+    fontSize: 16
   }
 }));
 
@@ -45,12 +48,15 @@ return(
       <h1>Full Stack Portfolio</h1>
       <Card className={classes.card}>
       <CardActionArea> 
-        <Button size="small" color="primary" >
-          <a href="https://github.com/bnguyen78/RATL">Github</a>
-        </Button>
-        <Button size="small" color="primary">
-        <a href="https://glacial-reaches-79922.herokuapp.com/">Deployed Version</a>
-        </Button>
+      <Link id= "link" color="inherit" href="https://github.com/bnguyen78/RATL" className = {classes.text}>
+        GITHUB
+      </Link>
+      <br />
+
+      <Link id= "link" color="inherit" href="https://glacial-reaches-79922.herokuapp.com/" className = {classes.text}>
+        DEPLOYED VERSION
+      </Link>
+
         <CardMedia
           className={classes.media}
           component="img"
@@ -73,12 +79,16 @@ return(
 
     <Card className={classes.card}>
       <CardActionArea>
-      <Button size="small" color="primary" >
-          <a href="https://github.com/bnguyen78/guardian">Github</a>
-        </Button>
-        <Button size="small" color="primary">
-        <a href="https://agile-mesa-62002.herokuapp.com/">Deployed Version</a>
-        </Button>
+
+      <Link id= "link" color="inherit" href="https://github.com/bnguyen78/guardian" className = {classes.text}>
+        GITHUB
+      </Link>
+      <br />
+
+      <Link id= "link" color="inherit" href="https://agile-mesa-62002.herokuapp.com/" className = {classes.text}>
+        DEPLOYED VERSION
+      </Link>
+
         <CardMedia
           className={classes.media}
           component="img"
@@ -101,12 +111,16 @@ return(
 
     <Card className={classes.card}>
       <CardActionArea>
-      <Button size="small" color="primary" >
-          <a href="https://github.com/bnguyen78/adventure-time">Github</a>
-        </Button>
-        <Button size="small" color="primary">
-        <a href="https://bnguyen78.github.io/adventure-time/">Deployed Version</a>
-        </Button>
+
+      <Link id= "link" color="inherit" href="https://github.com/bnguyen78/adventure-time" className = {classes.text}>
+        GITHUB
+      </Link>
+      <br />
+
+      <Link id= "link" color="inherit" href="https://bnguyen78.github.io/adventure-time/" className = {classes.text}>
+        DEPLOYED VERSION
+      </Link>
+
         <CardMedia
           className={classes.media}
           component="img"
