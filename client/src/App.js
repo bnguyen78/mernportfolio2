@@ -13,25 +13,26 @@ import {
 const App = () => {
   return (
     <>
-    <Router>
-    <Switch>
-      <Route exact path ="/">
-      <Navbar />
-        <About />
-      </Route>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Navbar />
+            <About />
+          </Route>
 
-      <Route path ="/contact">
-      <Navbar />
-        <Contact />
+          <Route path="/contact">
+            <Navbar />
+            <Contact />
+          </Route>
 
-      </Route>
-      <Route path ="/portfolio">
-      <Navbar />
-    <Portfolio />
-      </Route>
-    </Switch>
+          <Route path="/portfolio">
+            <Navbar />
+            <Portfolio />
+          </Route>
 
-    </Router>
+        </Switch>
+
+      </Router>
     </>
   )
 }
