@@ -33,7 +33,7 @@ const Contact = () => {
     <Typography>Email: Bryant_72002@yahoo.com</Typography>
     <br />
     <br />
-    <Typography>GitHub: https://github.com/bnguyen78</Typography>
+    <Typography>GitHub: <a href="https://github.com/bnguyen78">https://github.com/bnguyen78</a></Typography>
 
     {/* <Form /> */}
     </Paper>
