@@ -12,9 +12,9 @@ app.use(express.json())
 
 app.get('/', function (req, res) {
   app.get('/*', function (req, res) {
-     res.sendFile(path.join(__dirname, 'build', 'index.html'));
-   });
+     res.sendFile(path.join(__dirname, 'build', 'index.html'))
+   })
 
 app.listen(process.env.PORT || 3001, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env)
+})
