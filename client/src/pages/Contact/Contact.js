@@ -23,7 +23,6 @@ const Contact = () => {
   const classes = useStyles()
   return (
     <div className={classes.root}>
-    {/* <UserContext.Provider value={contactState}> */}
 
     
   <Paper id="paperContact"variant="outlined" elevation={3}>
@@ -32,10 +31,10 @@ const Contact = () => {
     <br />
     <br />
     <Typography>Email: Bryant_72002@yahoo.com</Typography>
+    <Typography>GitHub: https://github.com/bnguyen78</Typography>
 
     {/* <Form /> */}
     </Paper>
-    {/* </UserContext.Provider> */}
     </div>
   )
 }
