@@ -1,3 +1,9 @@
+## MERN Portfolio for Bryant
+
+## Deployed version
+https://serene-headland-22158.herokuapp.com
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
